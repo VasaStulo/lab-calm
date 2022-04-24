@@ -12,12 +12,16 @@ const props = defineProps({
 </script>
 
 <style lang="scss" scoped>
+@use "@/styles/functions/color" as *;
+
 .button {
   max-width: 100%;
-  height: 100%;
-  background: indianred;
+  background: setColor(biruzy, basic-color);
   color: white;
-  border-radius: 12px;
-  border: 22px;
+  border-radius: 20px;
+  padding: 22px 54px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
 }
 </style>

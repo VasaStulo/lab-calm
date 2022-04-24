@@ -3,9 +3,9 @@
     <div class="wrapper">
       <div class="first-panel">
         <div class="logo">
-          <navigation-menu />
           <img src="@/assets/logo.svg" alt="Логотип" />
         </div>
+        <navigation-menu />
       </div>
       <div class="second-panel"></div>
     </div>
@@ -18,12 +18,16 @@ import NavigationMenu from "../molecules/NavigationMenu";
 
 <style lang="scss" scoped>
 .left-panel {
+  width: 280px;
   .first-panel {
-    margin: 30px;
-    width: 280px;
-    height: 400px;
     background: #fff;
     border-radius: 20px 20px 0 0;
+    padding: 52px 42px 55px 28px;
+    width: 100%;
+    .logo {
+      width: 100px;
+      margin-bottom: 62px;
+    }
   }
 }
 </style>

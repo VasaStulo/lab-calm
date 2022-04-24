@@ -1,4 +1,4 @@
-@use "@/styles/functions/color" as *;
+@use "@/styles/functions/color";
 
 * {
   padding: 0;
@@ -26,10 +26,10 @@ aside {
 }
 html,
 body {
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   min-height: 100%;
-  width: 100%;
-  font-size: 100%;
+  min-width: 100%;
   line-height: 1;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -58,8 +58,6 @@ a,
 a:visited {
   text-decoration: none;
   color: #fff;
-  color: color(cta, primary);
-
 }
 a {
   &:hover {

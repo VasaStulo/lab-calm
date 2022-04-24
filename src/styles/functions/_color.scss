@@ -1,6 +1,6 @@
 @use "@/styles/colors" as *;
 
-@function color($keys...) {
+@function setColor($keys...) {
   $value: $colors;
 
   @each $key in $keys {

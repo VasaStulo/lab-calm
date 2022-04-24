@@ -1,6 +1,10 @@
+<link rel="stylesheet" href="styles/_colors.scss">
 <template>
-  <left-panel />
-  <router-view />
+  <main>
+    <left-panel />
+    <router-view />
+  </main>
+
 </template>
 
 <script setup>
@@ -10,39 +14,18 @@ import LeftPanel from "./components/organisms/LeftPanel";
 <style lang="scss">
 @use "@/styles/functions/color" as *;
 
-body {
-  background-color: color(light);
-  //color: color(dark);
-
-  @media (prefers-color-scheme: dark) {
-    background-color: color(dark);
-    //color: color(light);
-  }
-}
-</style>
-
-<style lang="scss" scoped>
-@use "@/styles/functions/color" as *;
-
 #app {
-  background: #90bdbc;
-}
-.logo {
-  height: 56px;
-  width: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: setColor(biruzy, bg-color);
 }
 
-.logo-link {
-  background: darken(color(light), 35%);
-  border-radius: 50%;
-  padding: 8px;
-
-  @media (prefers-color-scheme: dark) {
-    background: darken(color(dark), 5%);
-  }
-
-  & + .logo-link {
-    margin-left: 16px;
-  }
+main{
+  width: 1480px;
+  height: 714px;
 }
+
 </style>
